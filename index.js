@@ -1,14 +1,14 @@
 // Code your solution here
 
-findMatching = (drivers, string) => {
+let findMatching = (drivers, string) => {
   return drivers.filter( driver => driver.toUpperCase() === string.toUpperCase())
 };
 
 
-fuzzyMatch = (drivers, string) => {
+let fuzzyMatch = (drivers, string) => {
   return drivers.filter( driver => string.split("").includes( driver.split("")[0] ))
 };
 
-matchName = (drivers, string) => {
+let matchName = (drivers, string) => {
   return drivers.filter( driver => driver.name === string )
 };
