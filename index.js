@@ -6,7 +6,7 @@ findMatching = (drivers, string) => {
 
 
 fuzzyMatch = (drivers, string) => {
-  
+  drivers.filter( driver => string.split("").include? driver.split("")[0] )
 };
 
 matchName = (drivers, string) => {
