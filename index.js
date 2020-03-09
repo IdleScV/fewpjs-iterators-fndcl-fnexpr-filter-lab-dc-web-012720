@@ -10,5 +10,5 @@ fuzzyMatch = (drivers, string) => {
 };
 
 matchName = (drivers, string) => {
-  
+  return drivers.filter( driver => driver.name === string )
 };
